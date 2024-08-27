@@ -7,7 +7,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 //config variables
 const currency = "usd";
 const deliveryCharge = 2;
-const frontend_URL = 'http://192.168.100.32:5173';
+const frontend_URL = 'https://kicksalb.vercel.app/';
 // const frontend_URL = 'http://192.168.4.75:5173';
 
 // Placing User Order for Frontend using stripe
