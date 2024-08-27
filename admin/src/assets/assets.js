@@ -5,7 +5,7 @@ import parcel_icon from './parcel_icon.svg'
 import profile_image from './profile_image.jpg'
 import upload_area from './upload_area.png'
 
-export const url = 'http://192.168.100.32:4000'
+export const url = 'https://kicks-alb.onrender.com'
 // export const url = 'http://192.168.4.75:4000'
 
 
