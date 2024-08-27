@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #F9F9F9;
+  touch-action: manipulation;
+  /* Prevents zoom and pan actions */
+  -ms-touch-action: manipulation;
+  /* For older versions of Internet Explorer */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  border: none;
+  height: 1.5px;
+  background-color: #d2d2d269
+}
+
+.app-content {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Light mode (default) */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #1b1b1b;
+  color: #F9F9F9;
+}
+
+/* Dark mode class for app container if needed */
+.app.dark-mode {
+  background-color: #282828;
+  color: #F9F9F9 !important;
+}
+
+
+
+/* Disable outline globally */
+img,
+button,
+a,
+svg {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Disable tap highlight color on iOS */
+img,
+button,
+a,
+svg {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* Fully transparent */
+  outline: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Remove focus outline on touch devices */
+img:focus,
+img:active,
+svg:focus,
+svg:active,
+button:focus,
+button:active,
+a:focus,
+a:active {
+  outline: none;
+  box-shadow: none;
+  background: none;
+  -webkit-user-drag: none;
+}
+
+/* Prevent text selection */
+img,
+svg {
+  user-select: none;
+  -webkit-user-drag: none;
+  /* Disable image dragging */
+}
+
+/* Disable text selection and tap highlight on mobile devices */
+* {
+  user-select: none;
+  /* Prevent text selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  /* Remove tap highlight on mobile */
+}
+
+img,
+button,
+a,
+svg {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-drag: none;
+  /* Disable image dragging on mobile */
+}
+
+/* Specific styling for touch devices */
+@media (pointer: coarse) {
+
+  img,
+  svg,
+  button,
+  a {
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}

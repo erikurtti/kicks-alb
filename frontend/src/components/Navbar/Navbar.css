@@ -1,0 +1,272 @@
+/* General Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #dbdbdb;
+    padding: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.navbar .logo {
+    width: 100px;
+    z-index: 100;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #262626;
+    font-size: 17px;
+}
+
+.navbar-menu .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #262626;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar-search-icon {
+    position: relative;
+}
+
+.navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: #FF4C24;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+
+.navbar-right button {
+    background: #f7f7f7;
+    font-size: 16px;
+    color: black;
+    border: 1px solid #545454;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar-right button:hover {
+    background: #ababab;
+}
+
+.navbar-profile {
+    position: relative;
+}
+
+.navbar-profile-dropdown {
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar-profile-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.pfp-icon {
+    max-width: 7vh;
+    border-radius: 50%;
+    border: 2px solid #dbdbdb;
+}
+
+.navbar-profile-dropdown li:hover {
+    color: #aca9a9;
+}
+
+.navbar-profile:hover .navbar-profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 4px;
+    outline: 2px solid white;
+    list-style: none;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-profile hr {
+    background-color: gray;
+    height: 1px;
+    border: none;
+}
+
+/* Mobile Navbar Styles */
+.mobile-navbar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+    z-index: 1000;
+}
+
+.mobile-navbar a {
+    color: rgba(111, 110, 110, 0.756);
+    font-size: 24px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-navbar a img {
+    width: 37px;
+    height: 31px;
+}
+
+.mobile-navbar a:hover {
+    color: rgb(0, 0, 151);
+}
+
+.bold-image {
+    transform: scale(1.5);
+    /* Adjust scaling */
+}
+
+.spin {
+    display: inline-block;
+    animation: spin 4s linear infinite;
+}
+
+.mobile-navbar {
+    display: none;
+}
+
+
+
+/* Responsive Styles */
+
+@media (max-width:1050px) {
+    .navbar .logo {
+        width: 110px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+    }
+
+    .navbar-right img {
+        width: 22px;
+    }
+
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width:900px) {
+    .navbar .logo {
+        width: 100px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right img {
+        width: 20px;
+    }
+
+    .navbar-right button {
+        font-size: 15px;
+        padding: 7px 20px;
+    }
+}
+
+@media (max-width:750px) {
+    .navbar {
+        padding: 12px;
+        height: 68px;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-right{
+        gap: 18px;
+    }
+
+    .navbar .logo {
+        width: 90px;
+        margin-left: 7px;
+    }
+
+    .pfp-icon {
+        width: 15vh;
+        /* Larger profile icon for mobile */
+        border: 2px solid #dbdbdb;
+    }
+
+    .mobile-navbar {
+        display: flex;
+    }
+
+    .pc-side-navbar {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 850px) {
+    .navbar {
+        background-color: #fffdfd;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

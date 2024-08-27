@@ -1,0 +1,156 @@
+.user-list-2 {
+    margin-bottom: 40px;
+    margin: 20px;
+    padding-top: 30px;
+}
+
+.user-table-2 {
+    min-width: 65vw;
+}
+
+.app.dark-mode .user-list-2 p {
+    background-color: #282828;
+    color: #ffffffeb;
+}
+
+.user-table-format-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca67;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+.app.dark-mode .user-table-format-2 {
+    background-color: #282828;
+    color: #ffffffeb;
+}
+
+.app.dark-mode .user-table-format-2.title-2 {
+    background-color: #1a1a1aa8;
+    color: #ffffffeb;
+}
+
+.user-table-format-2.title-2 {
+    background-color: #f5f5f5;
+}
+
+.cursor-2 {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.clients-pfp-2 {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.confirmation-dialog-2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.app.dark-mode .confirmation-dialog-2 {
+    background-color: #282828;
+    color: #ffffffeb;
+}
+
+.confirmation-dialog-2 .confirmation-p-2 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.confirm-btn-2, .cancel-btn-2 {
+    padding: 10px 20px;
+    margin: 3px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-btn-2 {
+    background-color: red;
+    color: white;
+}
+
+.cancel-btn-2 {
+    background-color: #d6d5d5;
+    color: black;
+}
+
+@media(max-width:768px) {
+    .user-table-format-2 {
+        grid-template-columns: 1fr 1fr 2fr;
+        gap: 10px;
+    }
+    .user-table-format-2.title-2 {
+        display: none;
+    }
+    .cursor-2 {
+        cursor: pointer;
+        padding-left: 0px;
+    }
+    .clients-pfp-2 {
+        width: 50px;
+    }
+    .user-table-2 {
+        max-width: max-content;
+    }
+}
+
+.restore-icon-2 {
+    color: #4CAF50;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.restore-icon-2:hover {
+    color: #388E3C;
+}
+
+.search-bar-2 {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f5f5f500;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.app.dark-mode .search-bar-2 {
+    border: 1px solid #1e1e1e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #f5f5f5;
+}
+
+.search-container-2 {
+    position: relative;
+    display: inline-block;
+}
+
+.search-bar-2 {
+    padding-left: 2.5rem;
+}
+
+.search-icon-2 {
+    position: absolute;
+    left: 0.8rem;
+    top: 35%;
+    transform: translateY(-50%);
+    color: #888;
+}

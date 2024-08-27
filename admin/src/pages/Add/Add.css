@@ -1,0 +1,98 @@
+.add {
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: #6D6D6D;
+    font-size: 16px;
+}
+
+
+.app.dark-mode .add-product-name,
+.app.dark-mode .add-product-description {
+    background-color: #282828;
+    color: #ffffffeb;
+}
+
+.app.dark-mode .add-product-name input,
+.app.dark-mode .add-product-description textarea {
+    background-color: #282828;
+    color: #ffffffeb;
+}
+
+.app.dark-mode .add-category-price select,
+.app.dark-mode .add-category-price input {
+    background-color: #282828;
+    color: #ffffffeb;
+}
+
+
+.add form {
+    gap: 20px;
+}
+
+.app.dark-mode .add-img-upload p{
+    color: #ffffffeb;
+}
+
+.app.dark-mode img {
+    background-color: #282828;
+    color: #ffffffeb;
+}
+
+.add-img-upload img {
+    width: 120px;
+    border-radius: 5px;
+    border-radius: 5px;
+}
+
+.add-product-name,
+.add-product-description {
+    width: max(40%, 280px);
+    border-radius: 3px;
+    
+}
+
+.add-product-name input,
+.add-product-description textarea {
+    padding: 10px 10px;
+    border: 1.5px solid #cacaca71;
+    border: 1.5px solid #cacaca71;
+}
+
+.add-category-price {
+    display: flex;
+    gap: 30px;
+    border-radius: 3px;
+}
+
+.app.dark-mode .add-category-price{
+    background-color: #282828;
+    color: #ffffffeb;
+}
+
+.app.dark-mode .add-btn{
+    background-color:  #ffffffeb;
+    color: #282828;
+}
+
+.add-category-price select,
+.add-category-price input {
+    max-width: 120px;
+    padding: 10px;
+    border: 1.5px solid #cacaca56;
+    background-color: #ffffff;
+    border: 1.5px solid #cacaca56;
+    background-color: #ffffff;
+}
+
+.add-btn {
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.836);
+    color: rgba(255, 255, 255, 0.836);
+    cursor: pointer;
+    border-radius: 3px;
+    border-radius: 3px;
+}

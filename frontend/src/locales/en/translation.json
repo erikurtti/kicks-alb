@@ -1,0 +1,77 @@
+{
+    "welcome": "Welcome to Kick Alb!",
+    "home": "Home",
+    "cart": "Cart",
+    "contact_us": "Contact Us",
+    "header": {
+        "title": "Order your favourite shoes here",
+        "description": "Explore our diverse collection of stylish and comfortable shoes, meticulously curated for every occasion, ensuring all your footwear needs are met. From casual sneakers to elegant heels, our curated collection offers footwear that blends style with comfort, making every step a statement.",
+        "button": "View Shop"
+    },
+    "exploreMenu": {
+        "title": "Our brands",
+        "description": "Browse our diverse selection of stylish and comfortable shoes for every occasion. Click on the desired brand to filter the products."
+    },
+    "loading": "Loading...",
+    "items": "Items",
+    "title": "Title",
+    "price": "Price",
+    "quantity": "Quantity",
+    "total": "Total",
+    "remove": "Remove",
+    "cart_totals": "Cart Totals",
+    "subtotal": "Subtotal",
+    "delivery_fee": "Delivery Fee",
+    "proceed_to_checkout": "Proceed to Checkout",
+    "promo_code": "If you have a promo code, enter it here",
+    "promo_code_placeholder": "Promo code",
+    "submit": "Submit",
+    "profile_alt": "Profile",
+    "location": "Tirana | Albania",
+    "company_info": "KicksAlb has been a leading kicks and online shop for over 10 years, based in Tirana, Albania. We have served more than 50,000 clients and achieved over 100,000 sales. Our store offers over 300 products, all designed with the highest quality.",
+    "products": "Products",
+    "clients": "Clients",
+    "sales": "Sales",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+
+    "deliveryInfo": "Delivery Information",
+    "firstNamePlaceholder": "First Name",
+    "lastNamePlaceholder": "Last Name",
+    "emailPlaceholder": "Email",
+    "streetPlaceholder": "Street",
+    "cityPlaceholder": "City",
+    "statePlaceholder": "State",
+    "zipcodePlaceholder": "Zip Code",
+    "countryPlaceholder": "Country",
+    "phonePlaceholder": "Phone",
+    "cartTotals": "Cart Totals",
+    "subtotal2": "Subtotal",
+    "deliveryFee": "Delivery Fee",
+    "total2": "Total",
+    "paymentMethod": "Payment Method",
+    "cod": "Cash on Delivery",
+    "stripe": "Credit Card",
+    "placeOrder": "Place Order",
+    "proceedToPayment": "Proceed to Payment",
+
+    "app_download_message": "For Better Experience Download",
+    "app_name": "KicksAlb App",
+    "download_from_play_store": "Download from Google Play Store",
+    "download_from_app_store": "Download from Apple App Store",
+
+    "explore_shoes_by_brands": "Explore shoes by brands",
+    "my_orders": "My Orders",
+    "print_invoice": "Print Invoice",
+    "items_items": "Items:",
+
+    "next_next": "Next",
+    "prev_prev": "Prev",
+    "logout_logout": "Logout",
+    
+    "instagram_order": "Order on Instagram, DM (Cash)"
+    
+
+}

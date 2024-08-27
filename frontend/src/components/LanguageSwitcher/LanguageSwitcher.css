@@ -1,0 +1,84 @@
+/* Language switcher container */
+.language-switcher {
+    top: 17px;
+    right: 12vw;
+    display: inline-block;
+    border: 0; /* Remove any border */
+    z-index: 1000;
+    position: fixed;
+}
+
+/* Styling for the dropdown toggle button and select element */
+.language-switcher select,
+.dropdown-toggle {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 0; /* Ensure border is transparent */
+    background-color: transparent;
+    outline: none; /* Remove default focus outline */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    appearance: none; /* For other browsers */
+}
+
+/* Styling for flag icons */
+.flag-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+/* Add a custom dropdown arrow */
+.language-switcher::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    min-width: max-content;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Dropdown item styling */
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .language-switcher {
+        top: 18px;
+        left: 54.5%;
+        right: auto;
+        letter-spacing: 1px;
+        
+    }
+}

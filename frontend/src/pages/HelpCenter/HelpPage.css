@@ -1,0 +1,207 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+}
+
+.help-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 99vh;
+}
+
+.help-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 32px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    max-height: 65px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    margin-right: 8px;
+}
+
+.help-title {
+    font-size: 15px;
+    color: #262626;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.header-options {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px 16px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 22px;
+    background-color: #f8f8f8;
+    margin-right: 16px;
+}
+
+.language-select {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.content-wrapper1 {
+    display: flex;
+    margin-top: 50px;
+    background-color: #ffffff;
+    max-height: 97%;
+}
+
+.sidebar {
+    width: 350px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    padding-left: 30px;
+    padding-top: 70px;
+    height: 100vh;
+    overflow-y: hidden;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 16px;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 17px;
+    display: flex;
+    gap: 10px;
+}
+
+.sidebar li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1;
+    padding-left: 20px;
+    padding: 32px;
+}
+
+.main-content h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    padding-top: 35px;
+}
+
+.main-content p {
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.main-content ul {
+    margin-left: 20px;
+}
+
+.main-content ul li {
+    list-style-type: disc;
+    margin-bottom: 8px;
+}
+
+.helpful-box {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.yes-btn,
+.no-btn {
+    padding: 8px 16px;
+    margin: 0 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.yes-btn:hover,
+.no-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.help-home{
+    padding-top: 18vw;
+}
+
+@media (max-width: 768px) {
+    .search-input {
+        display: none;
+    }
+
+    .sidebar {
+        width: 70px;
+        padding-left: 0;
+        padding-top: 57px;
+    }
+
+    .help-home{
+        padding-top: 93vw;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar li {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .sidebar li a {
+        font-size: 25px;
+    }
+
+    .sidebar li p{
+        display: none;
+    }
+
+    .main-content {
+        padding: 16px;
+        margin-top: 10px;
+    }
+}

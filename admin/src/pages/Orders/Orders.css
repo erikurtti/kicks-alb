@@ -1,0 +1,89 @@
+.order {
+    margin-bottom: 40px;
+}
+
+.app.dark-mode p{
+    color: #ffffffeb;
+}
+
+.order-item {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    align-items: start;
+    gap: 30px;
+    border: 1.5px solid #cacaca56;
+    padding: 20px;
+    margin: 20px 0px;
+    font-size: 13px;
+    color: #505050;
+    background-color: #f9f9f9f6;
+    border-radius: 2px;
+}
+
+.app.dark-mode .order-item{
+    background-color: #282828;
+    color: #ffffffeb;
+}
+
+.order-item img {
+    width: 55px;
+}
+
+.app.dark-mode .order-item img {
+    background-color: #282828;
+    color: #ffffffeb;
+}
+
+
+.order-item-shoe,
+.order-item-name {
+    font-weight: 600;
+}
+
+.order-item-name {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.order-item-address {
+    margin-bottom: 10px;
+}
+
+.order-item select {
+    background-color: #fefefee7;
+    border: 1px solid #cacacaad;
+    width: max(10vw, 120px);
+    padding: 8px;
+    outline: none;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.app.dark-mode .order-item select{
+    background-color: #86868646;
+    color: #f9f9f9f6;
+    border: 1px solid #5f5f5fad;
+}
+
+.app.dark-mode .on-dark{
+    background-color: #262626d3;
+    color: #f9f9f9f6;
+}
+
+@media (max-width: 1000px) {
+    .order-item {
+        font-size: 12px;
+        grid-template-columns: 0.5fr 2fr 1fr;
+        padding: 15px 8px;
+    }
+
+    .order-item select {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .order-item img {
+        width: 50px;
+    }
+}

@@ -1,0 +1,59 @@
+.ai-support {
+    max-width: 600px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 90px auto;
+}
+
+.ai-support h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ai-support form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ai-support input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.ai-support button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ai-support button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.ai-support .suggestions {
+    margin-top: 20px;
+}
+
+.ai-support .suggestions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ai-support .suggestions li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ai-support .suggestions li:last-child {
+    border-bottom: none;
+}

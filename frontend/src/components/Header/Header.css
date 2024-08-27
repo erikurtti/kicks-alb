@@ -1,0 +1,151 @@
+.header {
+    height: 36vw;
+    padding-top: 30px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.420);
+    margin-top: 18px;
+    margin-left: 16px;
+    margin-right: 16px; 
+}
+
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.header-video::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    pointer-events: none;
+}
+
+.header-video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 60%;
+    bottom: 15%;
+    left: 6vw;
+    color: white;
+    /* Adjust text color as needed */
+}
+
+.header-content h2 {
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 25px);
+}
+
+.header-content p {
+    color: #fff;
+    font-size: 1vw;
+}
+
+.header-content button {
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #333;
+    /* Adjust button hover background */
+    color: #fff;
+    /* Adjust button text color */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: max(1vw, 13px);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-content button:hover {
+    /* Adjust button hover text color */
+    background-color: #fff;
+    /* Adjust button styles */
+    color: #333;
+}
+
+
+
+@media (max-width: 1050px) {
+
+    .header {
+        height: 43vw;
+    }
+
+    .header-content {
+        max-width: 55%;
+    }
+
+}
+
+
+@media (max-width: 770px) {
+
+    .header {
+        height: 62vw;
+        margin-top: 5px;
+        margin-left: 17px;
+        margin-right: 17px;
+    }
+
+    .header-content {
+        max-width: 60%;
+        padding-bottom: 10px;
+    }
+
+    .header-content h2 {
+        font-size: max(20px, 40px);
+        padding: 5px;
+        padding-bottom: 5px;
+    }
+
+    .header-content p {
+        display: none;
+    }
+
+    .header-content button {
+        padding: 2vw 4vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        height: 50vw;
+    }
+
+    .header-content {
+        max-width: 65%;
+        padding-bottom: 10px;
+    }
+
+    .header-content h2 {
+        font-size: 20px
+    }
+}
+
+
+
+@media (min-width: 850px) {
+    .header {
+        margin-top: 10px;
+    }
+}

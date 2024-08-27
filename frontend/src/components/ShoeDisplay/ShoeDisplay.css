@@ -1,0 +1,83 @@
+
+.shoe-display {
+    padding-top: 10px;
+    margin: 27px;
+}
+
+.shoe-display h2 {
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+}
+
+.shoe-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+
+@media (max-width: 768px) {
+    .shoe-display {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .shoe-display-list {
+        margin-top: 20px;
+        gap: 25px;
+    }
+    .search-section-2{
+        gap: 10px;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 3px;
+}
+
+.pagination li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    background: rgb(235, 235, 235);
+    border-radius: 3px;
+}
+
+.pagination li a:hover,
+.pagination li.active a {
+    background: #909090b9;
+    color: #fff;
+}
+
+.pagination li.disabled a {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+@media (min-width: 850px) {
+    .shoe-display-list {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        margin: 10px;
+    }
+}
+
+
+.search-section-2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
