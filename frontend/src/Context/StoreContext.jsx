@@ -5,7 +5,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
 
-    const url = 'http://192.168.100.32:4000'
+    const url = 'https://kicks-alb.onrender.com'
     // const url = 'http://192.168.4.75:4000'
 
     const [shoe_list, setShoeList] = useState([]);
